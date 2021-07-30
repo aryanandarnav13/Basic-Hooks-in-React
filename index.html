@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+
+
+
+
+
+
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.container {
+      /* text-align: center; */
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
+  
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>What are the Basic React Hooks?</h2>
+</div>
+
+<div class="row container">
+  <div>
+    <div class="card">
+      <h2></h2>
+      <h5>Blog , July 31, 2021</h5>
+     
+      <p>There are three basic Hooks to be used in React. They are:</p>
+ 
+        <ul style="list-style-type:none;">
+            <li>useState</li>
+            <li>useEffect</li>
+            <li> useContext</li>
+        </ul>
+   <h3>useState()</h3>
+   <p>useState Hooks is the new way of declaring a state in React app. Hook uses useState() functional component for setting and retrieving state. During the initial render, the returned state is same as the value passed as the first argument (initialState). It can be declared as</p>
+   <p>const [state, setState] = useState(initialState);</p>
+   <p>The setState function is used to update the state. It accepts a new state value and enqueues a re-render of the component. setState function can be used as:
+    setState(newState);</p>
+   <h3>useEffect()</h3>
+   <p>After State Hooks, the most basic hook in Reac is the Effect Hook. It allows  to perform side effects (in action) in the functional components. It does not use components lifecycle methods that are available in class components.</p>
+   <h3>useContext()</h3>
+   <p>useContext accepts a context object i.e. the value returned from React.createContext and returns the current context value for that context. A component calling useContext will always re-render when the context value changes.</p>
+   <p>In other words, useContext() hook is used to create common data that can be accessed throughout the component hierarchy without passing the props down manually to each level. Context defined will be available to all the child components without involving “props”.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Aryanand Arnav</h2>
+</div>
+
+</body>
+</html>
