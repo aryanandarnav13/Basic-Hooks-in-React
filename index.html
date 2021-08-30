@@ -65,7 +65,7 @@ body {
 <body>
 
 <div class="header">
-  <h2>What are the Basic React Hooks?</h2>
+  <h2> The Beginner’s Guide to Git, GitHub and Netlify</h2>
 </div>
 
 <div class="row container">
@@ -74,24 +74,137 @@ body {
       <h2></h2>
       <h5>Blog , July 31, 2021</h5>
      
-      <p>There are three basic Hooks to be used in React. They are:</p>
+     
+
+
+
+      <h2> What is Git?</h2>
+      <p> Git is a free, open-source version control software. It was created by Linus Torvalds in 2005. This tool is a version control system that was initially developed to work with several developers on the Linux kernel.
+        Git can be used to store content — it is mostly used to store code due to the other features it provides.</p>
+      <p>Real life projects generally have multiple developers working in parallel. So a version control system like Git is needed to ensure there are no code conflicts between the developers.
+        Additionally, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of the code.
+        A branch system in Git allows developers to work individually on a task. Basically think Git as a small software application that controls your code base.</p>
+      
+      <h2> Git Repositories</h2>
+     
+      <p>If we want to start using Git, we need to know where to host our repositories. Repository: a project that contains multiple files. In our case a repository will contain code-base files. There are two hosting platforms to host our repositories. One, Online (On the cloud) and second, Offline (Self-installed on your server). We’ll use GitHub as our hosting service.</p> 
+      <p>Before using Git & GitHub we should know why we need it?</p>
+      <p>
+        <ol>
+          <li>It makes it easy to contribute to your open source projects:  If you want to contribute, you just fork a project, make your changes and then send them a pull request.</li>
+       <li> Documentation: Making documentation enables people to learn about a project.</li>
+       <li>Track changes in your code across versions: When multiple people collaborate on a project, it’s hard to keep track — who changed what, when, and where those files are stored. GitHub takes care of this problem by keeping track of all the changes that have been pushed to the repository. You can have a version history of your code so that previous versions are not lost with every iteration. It’s easy to come back to the previous version and contribute your work.</li>
+      <li>Showcase your work</li>  
+      </ol>
+      </p>
+      
+    <h2>Working with GitHub projects</h2>
+      
+      
+      
+<p>We’ll work with GitHub projects in two ways.</p>
+<div>
+  <ol>
+    <li>First creating the repository , clone it to PC and work on it</li>
+    <p>Type 1 is about create a totally fresh repository on GitHub, clone it to our computer, work on our project and push it back.</p>
+  <li>Work on your project locally then creating the repository on GitHub and pushing it to remote.</li>
+  <p> Type 2 is about make a fresh repository from an existing folder on our computer and send that to GitHub because a lot of cases you might actually have already made something on your computer that you want suddenly turn into a repository on GitHub.</p>
+  </ol>
+</div>
+      
+      
+     <p>Pulling is the act of receiving from GitHub.
+      Pushing is the act of sending to GitHub.</p>
+      
+      
  
-        <ul style="list-style-type:none;">
-            <li>useState</li>
-            <li>useEffect</li>
-            <li> useContext</li>
-        </ul>
-   <h3>useState()</h3>
-   <p>useState Hooks is the new way of declaring a state in React app. Hook uses useState() functional component for setting and retrieving state. During the initial render, the returned state is same as the value passed as the first argument (initialState). It can be declared as</p>
-   <p>const [state, setState] = useState(initialState);</p>
-   <p>The setState function is used to update the state. It accepts a new state value and enqueues a re-render of the component. setState function can be used as:
-    setState(newState);</p>
-   <h3>useEffect()</h3>
-   <p>After State Hooks, the most basic hook in Reac is the Effect Hook. It allows  to perform side effects (in action) in the functional components. It does not use components lifecycle methods that are available in class components.</p>
-   <h3>useContext()</h3>
-   <p>useContext accepts a context object i.e. the value returned from React.createContext and returns the current context value for that context. A component calling useContext will always re-render when the context value changes.</p>
-   <p>In other words, useContext() hook is used to create common data that can be accessed throughout the component hierarchy without passing the props down manually to each level. Context defined will be available to all the child components without involving “props”.</p>
-    </div>
+      
+      
+      <h2>GitHub Desktop</h2>
+      
+      
+      <p>Once you have your GitHub account set up, you are ready to install GitHub Desktop.
+      
+        In your browser:
+        
+        Open a new browser tab.
+        
+        Navigate to desktop.github.com
+        
+        Download GitHub Desktop.
+        
+        Once installed, open the GitHub Desktop application. 
+        
+        
+        Click “Sign in to GitHub.com” and sign in using your GitHub username and password.
+        
+        
+        Click “Finish” on the next screen.
+        
+        You’re now ready to start using GitHub Desktop!</p>
+      
+      
+      <h2> Create a Repository in GitHub Desktop</h2>
+      
+     
+      
+      <p>To create a new repository in GitHub Desktop, go to File and then click "New Repository"</p>
+      <ul>
+        <li>name our repository</li>
+        <li> Set the local path</li>
+        <li>   click “Create Repository.”</li>
+      </ul>
+      
+     
+   
+      
+      <h3>GitHub Desktop - Publish Repository</h3>
+      
+      <p>On the top bar, notice that our current repository is shown. Next to that, our current branch, the default branch, is shown. This repository is currently available only on our local machine. To publish it to GitHub, let’s click “Publish repository.”
+      
+        Now when you navigate to your GitHub profile on github.com, you should see your newly created repository listed there.
+        
+        To work on this Repository: Click Open in Visual Studio Code/preferred text or code editor.
+        
+        Start doing your codes here.</p>
+      
+      <h3>  Commit in GitHub Desktop</h3>
+    
+    <p>  A commit tells Git that you made some changes to files in your repository and you want to record those changes.
+      
+      To make our first commit
+      
+      To commit the changes, we should first write a commit message on the bottom left of the screen. 
+      
+      When we’re ready to commit, we can simply click “Commit to main.”
+      
+      
+      Your commit is currently local to your computer. If you want the changes to  to show on GitHub, you must click “Push origin” on the next screen.
+      
+      </p>
+      <h2> Hosting on Netlify:</h2>
+      <ul>
+        <li> Login or signUp</li>
+        <li>   Add Your New Site : Click "New site from Git"</li>
+        <li>     Link to Your GitHub : Choose the Git provider where your site’s source code is hosted. </li>
+        <li> Authorize Netlify: A page for login to Github will popup. Just give the acess by logging in.</li>
+        <li> Pick a Repository</li>
+        <li> Configure Your Settings</li>
+        <li>Build Your Site : click the Build your site button to continue.</li>
+        <li> Your site is hosted with temporary name.</li>
+        <li>You can change the domain name by clicking Domain setting ->In custom domain Click "Edit Site name"</li>
+        <li> Done !!</li>
+      </ul>
+     
+      
+    <hr>
+   
+     <h3> So, Thank you everyone for reading. I just explained the basics of Git, GitHub and how to deploy on Netlify. I strongly encourage you guys to read more related articles on Git and GitHub. I hope this blog helped you all.
+      Thank you.
+ </h3> 
+      
+     
+   </div>
   </div>
 </div>
 
